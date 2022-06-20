@@ -1,6 +1,6 @@
 # Newton Meter
 
-A model of a Newton Meter created using visual python. It shows the weight of the object in Newtons and grams.
+A model of a Newton Meter created using visual python. It measures the weight of the object in Newtons and grams.
 
 ![](Newton%20Meter%201.png)
 
