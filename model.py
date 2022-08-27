@@ -1,10 +1,12 @@
+# import dependencies
 from vpython import *
 import math
 import numpy as np
 
-# vpython canvas
+# vpython canvas size
 canvas(width=1320,height=680)
 
+# create static objects
 ring(pos=vector(0,8.3,0),axis=vector(1,0,0),radius=1,thickness=0.2,texture=textures.metal,color=color.white)
 cylinder(length=2.3,radius=.8,pos=vector(0,5,0),axis=vector(0,1,0),texture=textures.metal,color=color.white)
 cylinder(length=2,radius=.5,pos=vector(0,4.8,0),axis=vector(0,1,0),texture=textures.metal,color=color.white)
@@ -76,6 +78,8 @@ grams.depth=.06
 
 y=4.25
 num=0
+
+# render the text objects
 for i in range(0,110,10):
     numstring=str(num)
     cNum=text(text=numstring,align='center',pos=vector(1.8,y,1.4),color=color.black)
@@ -98,7 +102,9 @@ key_ring=helix(pos=vector(-.1,-9.7,0),axis=vector(1,0,0),radius=1,thickness=.1,l
 holder_ring=ring(pos=vector(-.1,-11.2,0),axis=vector(0,0,1),radius=.6,thickness=.1,texture=textures.metal)
 mass=box(pos=vector(-.1,-13,0),color=color.white,texture=textures.wood,size=vector(3,3,3))
 
+# program loop
 while True:
+    # animate position in downward direction
     for movement in np.linspace(0,8.5,100):
         rate(60)
         pointer.pos=vector(0,4.3-movement,1.8)
@@ -114,6 +120,7 @@ while True:
         holder_ring.pos=vector(-.1,-11.2-movement,0)
         mass.pos=vector(-.1,-13-movement,0)
     
+    # animate position in upward direction
     for movement in np.linspace(8.5,0,100):
         rate(60)
         pointer.pos=vector(0,4.3-movement,1.8)
