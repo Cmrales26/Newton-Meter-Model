@@ -2,11 +2,13 @@
 
 A model of a Newton Meter created using visual python. It measures the weight of the object in Newtons and grams.
 
-![](Newton%20Meter%201.png)
+## Sample Images
 
-![](Newton%20Meter%202.png)
+![](NewtonMeter1.png)
 
-![](Newton%20Meter%203.png)
+![](NewtonMeter2.png)
+
+![](NewtonMeter3.png)
 
 **Note:** The marked scales may not be perfectly accurate and are just for demonstration purposes.
 
